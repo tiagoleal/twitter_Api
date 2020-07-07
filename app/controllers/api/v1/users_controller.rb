@@ -1,22 +1,17 @@
+# frozen_string_literal: true
+
 class Api::V1::UsersController < ApplicationController
-  def create
-  end
+  def create; end
 
-  def destroy
-  end
+  def destroy; end
 
-  def update
-  end
+  def update; end
 
-  def current
-  end
+  def current; end
 
-  def show
-  end
+  def show; end
 
-  def following
-  end
+  def following; end
 
-  def followers
-  end
+  def followers; end
 end
