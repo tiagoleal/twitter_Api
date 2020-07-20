@@ -14,6 +14,7 @@ module Api
       def following_count
         object.following_users.count
       end
+
     end
   end
 end

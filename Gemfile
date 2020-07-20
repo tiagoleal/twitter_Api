@@ -24,6 +24,10 @@ gem 'puma', '~> 3.11'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'carrierwave'
+gem 'carrierwave-base64'
+gem 'cloudinary'
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
@@ -74,6 +78,9 @@ group :development, :test do
   gem 'rspec-json_expectations'
   # Debbug
   gem 'byebug', platform: :mri
+
+    #Code coverage for Ruby with a powerful configuration library and automatic merging of coverage across test suites
+  gem 'simplecov'
 end
 
 group :development do
