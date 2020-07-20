@@ -1,7 +1,7 @@
 module Api
   module V1
-    class UserSerializer < ActiveModel::Serializer # >
-      attributes :id, :name, :email, :tweets_count, :followers_count, :following_count
+    class UserSerializer < ActiveModel::Serializer #>
+      attributes :id, :name, :email, :tweets_count, :followers_count, :following_count, :photo
  
       def tweets_count
         object.tweets.count
@@ -14,7 +14,6 @@ module Api
       def following_count
         object.following_users.count
       end
-
     end
   end
 end
